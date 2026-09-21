@@ -1,0 +1,88 @@
+Задача 1
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a = 4;
+    int b = 5;
+    cout << "До обмена: a = " << a << ", b = " << b << endl;
+
+    a = a + b; 
+    b = a - b; 
+    a = a - b; 
+
+    cout << "После обмена: a = " << a << ", b = " << b << endl;
+
+    return 0;
+}
+
+Добавляем библиотеку iostream ввод/вывод.
+Используем стандартный пространство имён
+задаём функцию + переменные
+меняем местами а и б 
+выводим конечный результат
+
+
+Задача 2
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n = 4;
+    
+    unsigned long long total_result = 1;  
+    unsigned long long current_fact = 1;  
+
+    for (int i = 1; i <= n; i++) {
+        current_fact = current_fact * i;            
+        total_result = total_result * current_fact; 
+    }
+
+    cout << "Произведение факториалов для n = " << n << " равно: " << total_result << endl;
+
+    return 0;
+}
+
+
+
+Добавляем библиотеку iostream ввод/вывод.
+Используем стандартный пространство имён
+задаём функцию + переменные с использованием типа данных для хранени больших целых чисел
+задаём цикл для подсчёта факториала и произведения факториалов
+выводим произведение 
+
+
+
+Задача 3
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int A;
+    int B;
+
+    A = 0;
+    B = 2 - A;
+    cout << "Если A = " << A << ", то B = " << B << endl;
+
+    A = 1;
+    B = 2 - A;
+    cout << "Если A = " << A << ", то B = " << B << endl;
+
+    return 0;
+}
+
+
+Добавляем библиотеку iostream ввод/вывод.
+Используем стандартный пространство имён
+задаём функцию и Добавляем переменные
+рассматриваем 2 случая
+выводим результат для 2 случаев
